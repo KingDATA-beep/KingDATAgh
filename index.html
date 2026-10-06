@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2853d8" />
+  <title>KingDATA 🇬🇭 — Affordable Data Bundles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="KingDATA home">
+      <img src="assets/kingdata-logo.jpg" alt="KingDATA logo" />
+      <span>KingDATA 🇬🇭</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#bundles">Buy data</a>
+      <a href="#checkers">Checkers</a>
+      <a href="#track">Track order</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#bundles">Buy data</a>
+    <a href="#checkers">Checkers</a>
+    <a href="#track">Track order</a>
+    <a href="#about">About</a>
+  </div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>KingDATA 🇬🇭</h1>
+          <p class="hero-lead">Affordable data bundles that keep you connected.</p>
+          <p class="hero-text">Buy your data quickly, stay online, and enjoy reliable service with KingDATA.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#bundles">Buy data <span>→</span></a>
+            <a class="btn btn-outline" href="#checkers">🎓 &nbsp;Result checkers</a>
+          </div>
+        </div>
+      </div>
+      <div class="wave wave-one"></div>
+      <div class="wave wave-two"></div>
+      <div class="wave wave-three"></div>
+    </section>
+
+    <section class="status-wrap section">
+      <div class="delivery-card">
+        <div class="delivery-title"><span class="status-dot"></span><strong>About 1–2 hours</strong><span>MTN is a little slow.</span></div>
+        <div class="delivery-grid">
+          <div class="delivery-item fast">
+            <div class="delivery-top"><strong>⚡ Fast lane · 1h 32m</strong><b>#422145</b></div>
+            <div class="time-grid">
+              <div><small>PLACED AT</small><strong>05 Oct, 08:25 pm</strong></div>
+              <div><small>DELIVERED AT</small><strong>05 Oct, 09:58 pm</strong></div>
+            </div>
+          </div>
+          <div class="delivery-item standard">
+            <div class="delivery-top"><strong>◷ Standard queue · 1h 56m</strong><b>#2182781</b></div>
+            <div class="time-grid">
+              <div><small>PLACED AT</small><strong>05 Oct, 07:33 pm</strong></div>
+              <div><small>SENT AT</small><strong>05 Oct, 09:29 pm</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bundles">
+      <div class="section-heading">
+        <h2>Popular bundles</h2>
+      </div>
+      <div class="bundle-grid">
+        <button class="bundle-card mtn" data-network="MTN" data-size="1GB" data-price="5.00">
+          <span>MTN</span><strong>1GB</strong><b>₵5.00</b>
+        </button>
+        <button class="bundle-card telecel" data-network="Telecel" data-size="10GB" data-price="46.00">
+          <span>Telecel</span><strong>10GB</strong><b>₵46.00</b>
+        </button>
+        <button class="bundle-card airtel" data-network="AirtelTigo" data-size="1GB" data-price="4.80">
+          <span>AirtelTigo</span><strong>1GB</strong><b>₵4.80</b>
+        </button>
+      </div>
+    </section>
+
+    <section class="section network-section">
+      <div class="section-heading row">
+        <h2>Browse by network</h2>
+        <a href="#bundles">All prices ›</a>
+      </div>
+      <div class="networks">
+        <button class="network-card" data-network-filter="MTN"><span class="network-logo mtn-logo">MTN</span></button>
+        <button class="network-card" data-network-filter="Telecel"><span class="network-logo telecel-logo">T</span></button>
+        <button class="network-card" data-network-filter="AirtelTigo"><span class="network-logo airtel-logo">AT</span></button>
+      </div>
+    </section>
+
+    <section class="section features">
+      <article>
+        <h3>Mobile money only</h3>
+        <p>MTN, Telecel and AirtelTigo money are all accepted. No card, no account to create.</p>
+      </article>
+      <article>
+        <h3>Any number on the network</h3>
+        <p>Buy for yourself, for family, for a customer. You enter the number at checkout.</p>
+      </article>
+      <article>
+        <h3>If it fails, you get it back</h3>
+        <p>A bundle that does not deliver is refunded. Keep the tracking ID and we can find it.</p>
+      </article>
+    </section>
+
+    <section class="section" id="checkers">
+      <div class="section-heading"><h2>Questions</h2></div>
+      <div class="faq">
+        <button class="faq-item"><span>How long does delivery take?</span><b>⌄</b></button>
+        <div class="faq-answer">Most bundles arrive quickly. During busy periods, some networks can take about 1–2 hours.</div>
+        <button class="faq-item"><span>My data has not arrived. What should I do?</span><b>⌄</b></button>
+        <div class="faq-answer">Keep your tracking ID and contact KingDATA support on WhatsApp so we can check the order.</div>
+        <button class="faq-item"><span>Can I get a refund?</span><b>⌄</b></button>
+        <div class="faq-answer">If a bundle fails to deliver, it can be refunded according to the order status.</div>
+        <button class="faq-item"><span>I sent data to the wrong number. Can it be returned?</span><b>⌄</b></button>
+        <div class="faq-answer">Contact support immediately. Once a bundle has been delivered, reversal may not be possible.</div>
+      </div>
+    </section>
+
+    <section class="support-section section" id="track">
+      <h2>Stuck on an order?</h2>
+      <p>Message KingDATA 🇬🇭 with your tracking ID and we will check it.</p>
+      <a class="whatsapp-btn" href="https://wa.me/233257036904" target="_blank" rel="noopener">◉ &nbsp; WhatsApp us</a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-brand">
+        <img src="assets/kingdata-logo.jpg" alt="KingDATA logo" />
+        <h2>KingDATA 🇬🇭</h2>
+      </div>
+      <p>"Love shouldn't cost a fortune. Keep your love alive with our affordable data bundles. Share sunrise selfies, midnight texts, and every moment in between – no matter the distance. Because true love isn't measured in bytes, but in memories 🌟. We care for you. Buy cheap data and stay online 24/7. Trust us because KingDATA 🇬🇭 never disappoint ❤️❤️❤️❤️💥💥💯"</p>
+      <a class="whatsapp-btn" href="#" id="groupBtn">◉ &nbsp; Join the WhatsApp group ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>SHOP</h4>
+        <a href="#home">⌂ &nbsp; Home</a>
+        <a href="#bundles">▣ &nbsp; Buy data</a>
+        <a href="#checkers">🎓 &nbsp; Checkers</a>
+        <a href="#track">◇ &nbsp; Track order</a>
+        <a href="#about">ⓘ &nbsp; About</a>
+      </div>
+      <div>
+        <h4>SELL WITH US</h4>
+        <a href="#">▱ &nbsp; Become a reseller</a>
+        <a href="#">↪ &nbsp; Reseller login</a>
+        <a href="tel:+233257036904">⌕ &nbsp; 0257036904</a>
+        <a href="https://wa.me/233257036904" target="_blank" rel="noopener">◉ &nbsp; WhatsApp</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 KingDATA 🇬🇭</div>
+  </footer>
+
+  <div class="support-widget">
+    <div class="support-message">👋 KingDATA support is here!</div>
+    <a class="support-circle chat" href="#track" aria-label="Chat support">◯</a>
+    <a class="support-circle wa" href="https://wa.me/233257036904" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+  </div>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">×</button>
+      <h2>Buy data</h2>
+      <p id="selectedBundle">Choose your bundle.</p>
+      <label>Phone number<input id="phone" type="tel" placeholder="05XXXXXXXX" /></label>
+      <label>Network
+        <select id="network">
+          <option>MTN</option><option>Telecel</option><option>AirtelTigo</option>
+        </select>
+      </label>
+      <button class="btn btn-primary" id="checkoutBtn">Continue to checkout →</button>
+      <small>Payment is completed with mobile money.</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
