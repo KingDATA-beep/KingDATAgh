@@ -1,191 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KingDATA Ghana 🇬🇭</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KingDATA 🇬🇭</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="header">
-  <div class="header-inner">
-    <a class="brand" href="#home" data-page="home">
-      <img src="kingdata-logo.jpg" alt="KingDATA logo">
-      <strong>KingDATA</strong><span>🇬🇭</span>
-    </a>
-    <nav class="desktop-nav">
-      <a data-page="home">Home</a>
-      <a data-page="buy">Buy data</a>
-      <a data-page="checkers">Checkers</a>
-      <a data-page="track">Track order</a>
-      <a data-page="about">About</a>
-      <a data-page="sell">Sell with us</a>
-    </nav>
-    <div class="head-actions">
-      <button id="themeBtn" aria-label="Toggle theme">☾</button>
-      <button id="menuBtn" aria-label="Open menu">☰</button>
-    </div>
-  </div>
-  <div id="mobileMenu" class="mobile-menu">
-    <a data-page="home">⌂ &nbsp; Home</a>
-    <a data-page="buy">◉ &nbsp; Buy data</a>
-    <a data-page="checkers">◎ &nbsp; Checkers</a>
-    <a data-page="track">⌁ &nbsp; Track order</a>
-    <a data-page="about">ⓘ &nbsp; About</a>
-    <a data-page="sell">♙ &nbsp; Sell with us</a>
-    <div class="menu-divider"></div>
-    <button id="menuCheck">⌕ &nbsp; Check a number</button>
-    <a href="https://wa.me/" target="_blank">◉ &nbsp; WhatsApp</a>
+  <img src="assets/logo.png" class="brand" alt="KingDATA">
+  <div class="header-icons">
+    <button class="moon" aria-label="dark mode">☾</button>
+    <button class="hamburger" onclick="openMenu()" aria-label="menu"><i></i><i></i><i></i></button>
   </div>
 </header>
 
-<main>
-  <section id="page-home" class="page active">
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>KingDATA 🇬🇭</h1>
-        <p>Affordable data bundles that keep you connected.</p>
-        <p class="hero-small">Buy your data quickly, stay online, and enjoy reliable service with KingDATA.</p>
-        <div class="hero-buttons">
-          <button class="primary" data-page="buy">Buy data <span>→</span></button>
-          <button class="outline" data-page="checkers">🎓 &nbsp; Result checkers</button>
-        </div>
-      </div>
-      <div class="wave wave1"></div><div class="wave wave2"></div>
-    </section>
+<section class="hero">
+  <h1>KingDATA🇬🇭</h1>
+  <p class="tag">Affordable data bundles that keep you connected.</p>
+  <p class="desc">Buy your data quickly, stay online, and enjoy reliable service<br>with KingDATA.</p>
+  <div class="hero-buttons">
+    <button class="buy">Buy data <span>→</span></button>
+    <button class="check">♧&nbsp; Result checkers</button>
+  </div>
+  <div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div>
+</section>
 
-    <section class="home-content">
-      <div class="notice">
-        <b>🟤 About 1–2 hours</b>
-        <span>MTN is a little slow now.</span>
-        <div class="order-lanes">
-          <div class="lane fast">
-            <div><b>⚡ Fast lane · 1h 32m</b><small>#422145</small></div>
-            <div class="lane-details"><span>PLACED AT<br><strong>05 Oct, 08:25 pm</strong></span><span>DELIVERED AT<br><strong>05 Oct, 09:58 pm</strong></span></div>
-          </div>
-          <div class="lane">
-            <div><b>◉ Standard queue · 1h 56m</b><small>#2182781</small></div>
-            <div class="lane-details"><span>PLACED AT<br><strong>05 Oct, 07:33 pm</strong></span><span>SENT AT<br><strong>05 Oct, 09:29 pm</strong></span></div>
-          </div>
-        </div>
+<section class="status">
+  <div class="status-box">
+    <h3><b>●</b> Slower than usual</h3>
+    <p>MTN is slow. Orders stay queued until delivered.</p>
+    <div class="orders">
+      <div class="order fast">
+        <div class="order-top"><strong>ϟ&nbsp; Fast lane · 4h 53m</strong><b>#2182882</b></div>
+        <div class="times"><span>PLACED AT<strong>05 Oct, 08:04 pm</strong></span><span>DELIVERED AT<strong>06 Oct, 12:56 am</strong></span></div>
       </div>
-
-      <h2>Popular bundles <button class="link-btn" data-page="buy">All prices ›</button></h2>
-      <div class="popular">
-        <button class="mini-card mtn" data-page="buy"><span>MTN</span><b>1GB</b><strong>₵5.00</strong></button>
-        <button class="mini-card telecel" data-page="buy"><span>Telecel</span><b>10GB</b><strong>₵46.00</strong></button>
-        <button class="mini-card airtel" data-page="buy"><span>AirtelTigo</span><b>1GB</b><strong>₵4.80</strong></button>
-      </div>
-
-      <h2>Browse by network <button class="link-btn" data-page="buy">All prices ›</button></h2>
-      <div class="networks">
-        <button data-network="mtn">MTN</button>
-        <button data-network="telecel">T</button>
-        <button data-network="airteltigo">AT</button>
-      </div>
-
-      <InfoBlocks />
-    </section>
-  </section>
-
-  <section id="page-buy" class="page">
-    <div class="subpage">
-      <h1>Data bundles</h1>
-      <p class="subtitle">Pick a data bundle you need today.</p>
-      <div class="notice compact">
-        <b>🟤 About 2–4 hours</b><span>MTN is a little slow now.</span>
-        <div class="order-lanes">
-          <div class="lane fast"><div><b>⚡ Fast lane · 1h 32m</b><small>#422145</small></div><div class="lane-details"><span>PLACED AT<br><strong>05 Oct, 08:25 pm</strong></span><span>DELIVERED AT<br><strong>05 Oct, 09:58 pm</strong></span></div></div>
-          <div class="lane"><div><b>◉ Standard queue · 4h 10m</b><small>#2182781</small></div><div class="lane-details"><span>PLACED AT<br><strong>05 Oct, 08:25 pm</strong></span><span>SENT AT<br><strong>06 Oct, 12:34 am</strong></span></div></div>
-        </div>
-      </div>
-      <div class="tabs">
-        <button class="tab active" data-filter="mtn">MTN</button>
-        <button class="tab" data-filter="airteltigo">AirtelTigo</button>
-        <button class="tab" data-filter="telecel">Telecel</button>
-      </div>
-      <div id="bundleList"></div>
-    </div>
-  </section>
-
-  <section id="page-checkers" class="page">
-    <div class="subpage">
-      <h1>Checkers</h1>
-      <p class="subtitle">Check a number before you buy or check your result.</p>
-      <div class="checker-card">
-        <h2>Check this number</h2>
-        <label>Mobile number</label>
-        <div class="check-row"><input id="checkNumber" placeholder="025703064" inputmode="numeric"><button id="checkBtn">Check ✓</button></div>
-        <div id="checkResult" class="result"></div>
-      </div>
-      <div class="faq">
-        <h2>Questions</h2>
-        <details open><summary>How long does delivery take?</summary><p>Delivery is usually quick, but it can take longer when the network is busy. Please wait a little after paying before you contact us.</p></details>
-        <details><summary>My data has not arrived. What should I do?</summary><p>Keep your receipt and order number, then contact KingDATA support.</p></details>
-        <details><summary>Can I get a refund?</summary><p>Contact support with your order details so the order can be checked.</p></details>
-        <details><summary>I sent data to the wrong number. Can it be returned?</summary><p>Wrong-number purchases may not be reversible. Contact support immediately.</p></details>
+      <div class="order standard">
+        <div class="order-top"><strong>◷&nbsp; Standard queue · 5h 13m</strong><b>#422181</b></div>
+        <div class="times"><span>PLACED AT<strong>05 Oct, 08:34 pm</strong></span><span>DELIVERED AT<strong>06 Oct, 01:47 am</strong></span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="page-track" class="page">
-    <div class="subpage">
-      <h1>Track your order</h1>
-      <p class="subtitle">Search by the number you bought for, or the reference from your receipt.</p>
-      <div class="track-card">
-        <label>SEARCH BY</label>
-        <div class="track-type"><button class="selected">Phone</button><input placeholder="024 123 4567" inputmode="tel"></div>
-        <label>Order identifier</label>
-        <select><option>Order identifier (Pick a date)</option><option>Order number</option><option>Reference</option></select>
-        <button class="track-btn" id="trackBtn">⌁ &nbsp; Track order</button>
-        <p id="trackMsg"></p>
-      </div>
-    </div>
-  </section>
+<section class="content">
+  <div class="title-row"><h2>Popular bundles</h2><a>All prices&nbsp; ›</a></div>
+  <div class="bundles">
+    <div class="bundle mtn"><small>MTN</small><strong>1GB</strong><b>₵5.00</b></div>
+    <div class="bundle telecel"><small>Telecel</small><strong>10GB</strong><b>₵46.00</b></div>
+    <div class="bundle airtel"><small>AirtelTigo</small><strong>1GB</strong><b>₵4.80</b></div>
+  </div>
 
-  <section id="page-about" class="page">
-    <div class="subpage">
-      <h1>About KingDATA 🇬🇭</h1>
-      <p class="subtitle">Affordable data bundles that keep you connected.</p>
-      <div class="about-card">
-        <p>"Love shouldn't cost a fortune. Keep your love alive with our affordable data bundles. Share sunrise selfies, midnight texts, and every moment in between – no matter the distance. Because true love isn't measured in bytes, but in memories ⭐".</p>
-        <p>We care for you. Buy cheap data and stay online 24/7. Trust us because KingDATA 🇬🇭 never disappoint ❤️❤️❤️❤️ 💥💥💯</p>
-        <a class="whatsapp-link" href="https://wa.me/" target="_blank">◉ &nbsp; Join the WhatsApp group</a>
-      </div>
-      <InfoBlocks />
-    </div>
-  </section>
+  <div class="title-row network-title"><h2>Browse by network</h2><a>All prices&nbsp; ›</a></div>
+  <div class="network">
+    <div class="network-card"><span class="mtn-logo">MTN</span></div>
+    <div class="network-card"><span class="t-logo">T</span></div>
+    <div class="network-card"><span class="at-logo">AT</span></div>
+  </div>
 
-  <section id="page-sell" class="page">
-    <div class="subpage">
-      <button class="back" data-page="home">← Back to Shop</button>
-      <div class="reseller-head"><span>● Stock</span><h1>Create Your Reseller Account</h1><p>Fill in your details to get started!</p><small>Activation fee: GHS (once-off platform fee)</small></div>
-      <form id="sellerForm" class="seller-form">
-        <label>Store Name *</label><input required placeholder="e.g. John's Data Hub">
-        <label>Your Full Name *</label><input required placeholder="Your full name">
-        <label>Email Address *</label><input required type="email" placeholder="youremail.com">
-        <label>Phone Number *</label><input required placeholder="0241234567">
-        <label>WhatsApp Number (optional)</label><input placeholder="Same as phone is fine">
-        <label>Password *</label><input required type="password" minlength="6" placeholder="At least 6 characters">
-        <label>Confirm Password *</label><input required type="password" minlength="6" placeholder="Confirm password">
-        <button class="primary wide" type="submit">Create reseller account</button>
-        <p id="sellerMsg"></p>
-      </form>
-    </div>
-  </section>
-</main>
+  <div class="rules">
+    <article><h3>Mobile money only</h3><p>MTN, Telecel and AirtelTigo money are all accepted. No card, no account to create.</p></article>
+    <article><h3>Any number on the network</h3><p>Buy for yourself, for family, for a customer. You enter the number at checkout.</p></article>
+    <article><h3>If it fails, you get it back</h3><p>A bundle that does not deliver is refunded. Keep the tracking ID and we can find it.</p></article>
+  </div>
 
-<div class="support-label">👋 KingDATA support is here!</div>
-<a class="floating blue" href="#" aria-label="Support">◯</a>
-<a class="floating green" href="https://wa.me/" target="_blank" aria-label="WhatsApp">◉</a>
+  <h2 class="questions-title">Questions</h2>
+  <div class="faq">
+    <button onclick="faq(this)">How long does delivery take?<span>⌄</span></button><div class="answer">Delivery depends on the network and current queue.</div>
+    <button onclick="faq(this)">My data has not arrived. What should I do?<span>⌄</span></button><div class="answer">Keep your tracking ID and contact KingDATA support.</div>
+    <button onclick="faq(this)">Can I get a refund?<span>⌄</span></button><div class="answer">Undelivered bundles are refunded according to the order policy.</div>
+    <button onclick="faq(this)">I sent data to the wrong number. Can it be returned?<span>⌄</span></button><div class="answer">Contact support immediately with your tracking ID.</div>
+  </div>
+
+  <div class="stuck">
+    <hr><h2>Stuck on an order?</h2><p>Message KingDATA🇬🇭 with your tracking ID and we will check it.</p>
+    <button>◉&nbsp; WhatsApp us</button>
+  </div>
+</section>
 
 <footer>
-  <div><img src="kingdata-logo.jpg" alt=""> <b>KingDATA🇬🇭</b></div>
-  <p>Affordable data bundles that keep you connected.</p>
-  <small>© 2026 KingDATA 🇬🇭</small>
+  <div class="footer-brand"><img src="assets/logo.png"><strong>KingDATA🇬🇭</strong></div>
+  <p>"Love shouldn't cost a fortune. Keep your love alive with our affordable data bundles. Share sunrise selfies, midnight texts, and every moment in between – no matter the distance. Because true love isn't measured in bytes, but in memories 🌟". We care for you Buy Cheap data and stay online 24/7, Trust us because KingDATA🇬🇭 never disappoint ❤️❤️❤️❤️💥💥💯</p>
+  <button class="join">◉&nbsp; Join the WhatsApp group&nbsp; ↗</button>
+  <div class="footer-links">
+    <div><h4>SHOP</h4><a>⌂&nbsp; Home</a><a>▣&nbsp; Buy data</a><a>♢&nbsp; Checkers</a><a>◇&nbsp; Track order</a><a>ⓘ&nbsp; About</a></div>
+    <div><h4>SELL WITH US</h4><a>♧&nbsp; Become a reseller</a><a>↪&nbsp; Reseller login</a><a>⌕&nbsp; 0257036904</a><a>◉&nbsp; WhatsApp</a></div>
+  </div>
+  <div class="copyright">© 2026 KingDATA🇬🇭</div>
 </footer>
 
-<script src="script.js"></script>
-</body>
-</html>
+<div class="float"><button>◔</button><button>◉</button></div>
+
+<div id="menu" class="menu">
+  <div class="menu-header"><img src="assets/logo.png"><button onclick="closeMenu()">×</button></div>
+  <nav>
+    <a class="selected">⌂ <span>Home</span></a>
+    <a>▣ <span>Buy data</span></a>
+    <a>♢ <span>Checkers</span></a>
+    <a>◇ <span>Track order</span></a>
+    <a>ⓘ <span>About</span></a>
+    <a>♧ <span>Sell with us</span></a>
+  </nav>
+  <hr>
+  <div class="menu-contact"><a>⌕ <span>Check a number</span></a><a>⌕ <span>0257036904</span></a><a>◉ <span>WhatsApp</span></a></div>
+  <button class="menu-chat">◔</button>
+  <button class="menu-buy">Buy data&nbsp; →</button>
+</div>
+<script>
+function openMenu(){document.getElementById('menu').classList.add('show');document.body.style.overflow='hidden'}
+function closeMenu(){document.getElementById('menu').classList.remove('show');document.body.style.overflow=''}
+function faq(x){let a=x.nextElementSibling;a.classList.toggle('open');x.querySelector('span').textContent=a.classList.contains('open')?'⌃':'⌄'}
+</script>
+</body></html>
