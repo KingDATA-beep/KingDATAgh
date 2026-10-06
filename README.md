@@ -1,28 +1,14 @@
-# KingDATA Website
+# KingDATA Ghana 🇬🇭
 
-A responsive single-page KingDATA website recreated from the supplied screenshots.
+Frontend recreation based on the supplied KingDATA screen recording.
 
-## Included
-- Responsive mobile/desktop layout
-- Hero section
-- Delivery status card
-- Popular data bundles
-- Network browsing
-- FAQ accordion
-- Track-order/support section
-- WhatsApp links
-- Footer
-- Dark mode
-- Mobile navigation
-- Buy-data modal
-- LocalStorage theme preference
+## Files
+- index.html
+- style.css
+- script.js
+- kingdata-logo.jpg (keep your existing logo in the same folder)
 
-## Run
-Open `index.html` in a browser.
+## GitHub Pages
+Upload/replace the three code files in your `KingDATAgh` repository and keep `kingdata-logo.jpg`.
 
-## Replace before launch
-1. Replace `assets/kingdata-logo.jpg` with your original high-resolution logo.
-2. Replace the WhatsApp group placeholder with your real group URL.
-3. Connect the checkout button to your actual payment/order API.
-4. Connect Track Order and Result Checkers to your backend.
-5. Replace sample delivery IDs/times with live data.
+The purchase, tracking, checker and reseller forms are frontend demonstrations. Connect them to your existing API/backend/payment system for real transactions.
